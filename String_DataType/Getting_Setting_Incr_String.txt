@@ -8,3 +8,44 @@ If the they key value already exist into redis DB so it couldn't save the value 
 
 set user:2 Saad nx   // But if you will not put the nx at the end of a command so the user value in the redis could be changed 
 (nil)
+
+
+MGET :-  Multiple Get Values
+ 
+mget msg:2 user:1 user:3
+1) "Hello_Fine"
+2) "Hasan"
+3) "Talha"
+
+
+mget msg:3 user:1 msg:2
+1) "Why?"
+2) "Hasan"
+3) "Hello_Fine"
+
+
+MSET :- To set the Multiple Values
+
+mset msg:1 Hello_World msg:2 How_areYou?
+OK
+
+
+Increment :- 
+
+set count 0
+OK
+
+incr count
+(integer) 1
+
+incrby count 10
+(integer) 12
+
+
+Decrement :-
+
+decr count
+(integer) 11
+
+decrby count 8
+(integer) 3

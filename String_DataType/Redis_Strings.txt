@@ -28,3 +28,23 @@ id : name
 
 
 Redis can also do the grouping on the basis of this : Delimiter 
+
+
+Expiry Limit to the String
+
+Expire the redis key:value pair means after the given time 20 seconds this will delete from the redis database    
+await client.expire("user:4", 20);  
+await client.expire("msg:4", 20);  
+
+
+
+keys user*   -->> Give the keys starting from the user
+1) "user:3"
+2) "user:1"
+3) "user:2"
+
+
+keys msg*
+1) "msg:1"
+2) "msg:2"
+3) "msg:3"

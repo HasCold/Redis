@@ -1,0 +1,32 @@
+Set is a unique type of Data Structure that doesn't allow the duplicate values in the data set.
+
+A Redis set is an unordered collection of unique strings (members). You can use Redis sets to efficiently:
+. Track unique items (e.g., track all unique IP addresses accessing a given blog post).
+. Represent relations (e.g., the set of all users with a given role).
+
+Set Add command :- 
+
+sadd -->> 
+
+sadd ip 1
+(integer) 1
+sadd ip 2
+(integer) 1
+
+
+Remove the element from the set command :-
+srem ip 3
+(integer) 1
+
+
+To check  whether the element is present in the set or not :- 
+ sismember ip 3
+(integer) 0
+
+ sismember ip 4
+(integer) 1
+
+
+Intersection :- 
+sinter bikes:racing:france bikes:racing:usa
+1) "bike:1"

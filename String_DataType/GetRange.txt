@@ -1,0 +1,5 @@
+getrange mykey 0 3
+"This"
+
+getrange msg:2 0 3
+"How_"

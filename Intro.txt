@@ -30,6 +30,6 @@ localhost://8001 is the port for GUI.
 So we have to interact the redis server which is in the docker-conatiner :-
 
 Execute below command :-
-docker exec -it  07af4e680dff bash  // -->> -it means InterActive
+docker exec -it 07af4e680dff bash  // -->> -it means InterActive
 
 From above command which means we are entering into the docker conatiner and run the bash 

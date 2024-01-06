@@ -1,0 +1,38 @@
+List is basically like an Array in the Redis.
+
+Redis Lists can be used to implement the stacks and queues.
+
+Stacks -->> Vertical Data Structure
+L -> Insert
+R -> Remove
+
+Queues -->> Horizontal Data Structure
+L -> Insert
+L -> Remove
+
+lpush pushes the value from left side of queue -- adds a new element to the head of a list
+rpush pushes the value from right side of queue -- adds a new element to the tail of a list.
+
+lpush messages Hey   --->> messages is the key
+(integer) 1
+
+lpush messages HiBro  -->> messages is the key
+(integer) 2
+
+rpush messages Bye 
+(integer) 3
+
+
+LPOP removes and returns an element from the head of a list; 
+RPOP does the same but from the tails of a list.
+
+lpop messages 2
+1) "Hasan"
+2) "HiBro"
+
+rpop messages
+"Bye"
+
+
+llen messages    // --->> Length of Lists
+(integer) 2

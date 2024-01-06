@@ -1,0 +1,16 @@
+BLPOP removes and returns an element from the head of a list. If the list is empty, the command blocks until an element becomes available or until the specified timeout is reached.
+
+
+blpop messages 12
+1) "messages"
+2) "Huxaifa"
+
+blpop messages 12
+1) "messages"
+2) "Umer"
+
+
+blpop messages 12   //-- >> The command is block for the 12 seconds because we have mentioned as well as the list is empty now or if in the duration of 12 seconds if the new element is added in the queue messages so it will remove them in the specified time.
+(nil)
+(12.04s)
+
