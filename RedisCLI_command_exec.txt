@@ -1,0 +1,5 @@
+root@07af4e680dff:/# redis-cli ping
+PONG
+
+NOTE :-  When you have entered this command so it means you are ready to interact with the redis server. 
+root@07af4e680dff:/# redis-cli

@@ -1,0 +1,30 @@
+Redis strings store sequences of bytes, including text, serialized objects, and binary arrays. As such, strings are the simplest type of value you can associate with a Redis key. They're often used for caching.
+
+Redis stores data in a key-value pair format, where each piece of data is associated with a unique key.
+In Redis, keys are always strings, and they serve as the identifiers for the data stored in the database. The values associated with these keys can be various data types, such as strings, hashes, lists, sets, and more.
+
+Example :-
+
+set name Hasan
+OK  -->> Ok means this value is now been setted.
+
+get name
+"Hasan"
+
+
+Update :- You can also update the value from the GUI which is on our port localhost://8001/redis-stack/browser 
+get name
+"Muhammad Hasan Ali"
+
+
+--------------------------- Right Convention -------------------------------------
+
+<entity>:<id> value
+
+id : name 
+1.   Hasan              set user:1 Hasan
+2.   Umer               set user:2 Umer
+3.   Talha              set user:3 Talha
+
+
+Redis can also do the grouping on the basis of this : Delimiter 

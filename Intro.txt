@@ -1,0 +1,35 @@
+The open source, in-memory database stores millions of data, cache, streaming engine and message broker.
+
+In-memory Database means we are talking about primary memory "RAM" which is very fast but temporary stores the data.
+
+Why Redis :-
+
+If the user refersh the web page so the server will go again and compute all the same data and then give it to the server. So Here is the unnnecssary computer power will involve means for the query to database the unnnecssary billing , reach on the server and database which is not so good and also the user waiting time get increased. So for this purposes we have a REDIS like services means we have also more than Redis service in the Tech communtiy but Redis is the most popular one's which can solve the problem.
+
+Problem :- 
+1. ReQuery / Recompute Power
+2. Response time will also get increased
+
+Redis is also a server and also run on the port : 6379
+
+docker ps :- Through this you can see your docker conatiner is running vid the cmd_line
+
+
+CONTAINER ID :- 07af4e680dff
+IMAGE -->> NAME :- redis/redis-stack:latest redis-stack
+COMMAND :- "/entrypoint.sh"
+STATUS :-  Up 19 minutes
+PORTS  :- 0.0.0.0:6379->6379/tcp, 0.0.0.0:8001->8001/tcp 
+
+
+This is our 07af4e680dff conatiner ID .
+localhost://6379 is the port for server.
+localhost://8001 is the port for GUI.
+
+
+So we have to interact the redis server which is in the docker-conatiner :-
+
+Execute below command :-
+docker exec -it  07af4e680dff bash  // -->> -it means InterActive
+
+From above command which means we are entering into the docker conatiner and run the bash 

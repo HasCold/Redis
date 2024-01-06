@@ -1,0 +1,10 @@
+Getting and Setting strings
+
+set msg:3 How_are_you nx
+OK
+
+At the end of nx means if there is not any other key which has entity from msg:3 so it could be saved into redis otherwise it won't save.
+If the they key value already exist into redis DB so it couldn't save the value from the nx command.
+
+set user:2 Saad nx   // But if you will not put the nx at the end of a command so the user value in the redis could be changed 
+(nil)
