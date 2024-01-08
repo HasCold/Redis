@@ -1,0 +1,20 @@
+Redis Hashes 
+
+we can also set the key-value pair in the hashes.
+
+hSet bike:1 model Honda price 12321 brand R-70
+
+hGetAll bike:1
+1) "model"
+2) "Honda"
+3) "price"
+4) "12321"
+5) "brand"
+6) "R-70"
+
+
+hGet bike:1 color
+"black"
+
+hIncrBy bike:1 price 10000
+(integer) 22321

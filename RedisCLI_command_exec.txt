@@ -1,3 +1,14 @@
+docker ps :- Through this you can see your docker conatiner is running vid the cmd_line
+
+
+So we have to interact the redis server which is in the docker-conatiner :-
+
+Execute below command :-
+docker exec -it 07af4e680dff bash  // -->> -it means InterActive
+
+From above command which means we are entering into the docker conatiner and run the bash 
+
+
 root@07af4e680dff:/# redis-cli ping
 PONG
 
