@@ -1,0 +1,10 @@
+Redis Streams is the alternative way of Kafka 
+
+Event-Sourcing :- Tracking user actions, clicks etc.
+Sensor Monitoring :- Reading from devices in the field.
+
+How much the fast generation data will dump into the Redis-Streams.
+
+
+xadd race:france * rider Hasan speed 32 position 8
+"1704737953015-0"

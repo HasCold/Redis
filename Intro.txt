@@ -33,3 +33,6 @@ Execute below command :-
 docker exec -it 07af4e680dff bash  // -->> -it means InterActive
 
 From above command which means we are entering into the docker conatiner and run the bash 
+
+
+You can also do the PUB/SUB from redis.

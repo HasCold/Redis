@@ -1,6 +1,7 @@
 Redis Hashes 
 
 we can also set the key-value pair in the hashes.
+Most Redis hash commands are O(1) which is the best data strcuture as the performance and execution wise.
 
 hSet bike:1 model Honda price 12321 brand R-70
 
@@ -18,3 +19,6 @@ hGet bike:1 color
 
 hIncrBy bike:1 price 10000
 (integer) 22321
+
+hIncrBy bikes:1 price -100
+(integer) 22034

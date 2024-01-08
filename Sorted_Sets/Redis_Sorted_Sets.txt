@@ -1,0 +1,32 @@
+A Redis sorted set is a collection of unique strings (members) ordered by an associated score. 
+It Works like a priority queue.
+
+zadd score 10 Umer
+(integer) 1
+127.0.0.1:6379> zadd score 6 hasan
+(integer) 1
+127.0.0.1:6379> zadd score 1 Saad
+(integer) 1
+127.0.0.1:6379> zadd score 3 talha
+(integer) 1
+
+
+Range :-  0 and -1 means from element index 0  to the last element 
+
+zrange score 0 -1
+1) "Saad"
+2) "talha"
+3) "hasan"
+4) "Umer"
+
+
+Reverse Range :- 
+
+zrevrange score 0 -1
+1) "Umer"
+2) "hasan"
+3) "talha"
+4) "Saad"
+
+zrank score Umer
+(integer) 3
